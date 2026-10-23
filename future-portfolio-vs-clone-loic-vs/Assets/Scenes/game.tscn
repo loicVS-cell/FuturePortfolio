@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cosiy0xpk7y8m"]
+
+[node name="Game" type="Node" unique_id=1632315879]
+
+[node name="Main Scene" type="Control" parent="." unique_id=36454450]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UI" type="Control" parent="." unique_id=110211270]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
