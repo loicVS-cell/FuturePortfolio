@@ -8,7 +8,7 @@ func _physics_process(delta):
 	character_direction.y = Input.get_axis("ui_up", "ui_down")
 	
 	if character_direction:
-		velocity = character_direction * movement_speed
+		velocity = character_direction.normalized() * movement_speed
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
 		
