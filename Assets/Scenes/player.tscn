@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cvlx1qo6kup2v"]
 
 [ext_resource type="Texture2D" uid="uid://dp15kxng425gl" path="res://icon.svg" id="1_6cd4h"]
+[ext_resource type="Script" uid="uid://mvjsyyeq7vm3" path="res://Assets/Scripts/player_controls.gd" id="1_7dd06"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dd06"]
 size = Vector2(118, 118)
 
 [node name="Player" type="CharacterBody2D" unique_id=1477115377]
+script = ExtResource("1_7dd06")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2007582375]
 
