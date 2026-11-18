@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c1rgefu6kwkmd"]
+
+[ext_resource type="Script" uid="uid://drlrv3tfbu50p" path="res://Assets/Scripts/projectile.gd" id="1_ca7f4"]
+[ext_resource type="Texture2D" uid="uid://dbe6njbxnffie" path="res://Assets/Sprites/Laser Sprites/01.png" id="1_ijbig"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ca7f4"]
+radius = 26.57066
+
+[node name="Projectile" type="Area2D" unique_id=296630126]
+script = ExtResource("1_ca7f4")
+
+[node name="01" type="Sprite2D" parent="." unique_id=203055312]
+position = Vector2(2, 1)
+scale = Vector2(1.5124738, 1.5124738)
+texture = ExtResource("1_ijbig")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2021215104]
+shape = SubResource("CircleShape2D_ca7f4")

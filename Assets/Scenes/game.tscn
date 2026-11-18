@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cosiy0xpk7y8m"]
 
+[ext_resource type="Script" uid="uid://b8nucqowkbs6m" path="res://Assets/Scripts/main_scene.gd" id="1_lcp10"]
 [ext_resource type="PackedScene" uid="uid://cvlx1qo6kup2v" path="res://Assets/Scenes/player.tscn" id="1_nbu75"]
+[ext_resource type="PackedScene" uid="uid://c8mwpoibv8jlb" path="res://Assets/Scenes/mob.tscn" id="2_pfbgl"]
 
 [node name="Game" type="Node" unique_id=1632315879]
 
@@ -9,14 +11,26 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_lcp10")
 
-[node name="ColorRect" type="ColorRect" parent="Main Scene" unique_id=1491028075]
-layout_mode = 0
+[node name="CanvasLayer" type="CanvasLayer" parent="Main Scene" unique_id=564022107]
+layer = -20
+
+[node name="ColorRect" type="ColorRect" parent="Main Scene/CanvasLayer" unique_id=1491028075]
 offset_left = -1143.0
 offset_top = -638.0
 offset_right = 1153.0
 offset_bottom = 648.0
 color = Color(0, 0.8644915, 0.4122651, 1)
+
+[node name="Mob3" parent="Main Scene" unique_id=2139877054 instance=ExtResource("2_pfbgl")]
+position = Vector2(-392, -206)
+
+[node name="Mob2" parent="Main Scene" unique_id=474524105 instance=ExtResource("2_pfbgl")]
+position = Vector2(-671, 360)
+
+[node name="Mob" parent="Main Scene" unique_id=97622187 instance=ExtResource("2_pfbgl")]
+position = Vector2(442, -123)
 
 [node name="Player" parent="Main Scene" unique_id=1477115377 instance=ExtResource("1_nbu75")]
 
